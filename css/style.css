@@ -1,0 +1,408 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+::selection {
+    background-color: #ff53c0;
+    color: white;
+}
+header {
+    background-color: #edfbfe;
+    background-image: url("../imgs/bg-hero-desktop.png");
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    background-size: 1900px;
+    justify-content: center;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.contenair {
+    position: relative;
+    width: 1500px;
+}
+.contenair img {
+    position: absolute;
+    top: 50px;
+}
+.contenair .head button {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    background-color: #ffffff;
+    border-radius: 73px;
+    -webkit-border-radius: 73px;
+    -moz-border-radius: 73px;
+    -ms-border-radius: 73px;
+    -o-border-radius: 73px;
+    padding: 10px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.contenair button:hover {
+    box-shadow: 0 0 11px 0px #00000040;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.contenair .head button a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding: 50px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.contenair .head button a:hover {
+    color: #8b959d;
+}
+.contenair .content img {
+    position: absolute;
+    width: 740px;
+    top: 210px;
+    right: 46px;
+    animation-name: image;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.4, 0.38, 0.85, 0.91);
+    animation-iteration-count: infinite;
+}
+@keyframes image {
+    0% {
+        top: 250px;
+    }
+    50% {
+        top: 210px;
+    }
+    100% {
+        top: 250px;
+    }
+}
+.content .text {
+    position: absolute;
+    top: 275px;
+    width: 536px;
+    line-height: 1.2;
+}
+.content .text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.content .text p {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.content .text button {
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 51px;
+    background-color: #fe52c0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.content .text button:hover {
+    background-color: #ff73cc;
+}
+.content .text a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+@media (max-width: 1300px)  {
+    .contenair .content img {
+        width: 500px;
+    }
+}
+@media (max-width: 1050px) {
+    .content .text {
+        width: 385px;
+    }
+    header {
+        height: 915px;
+    }
+}
+@media (max-width: 900px) {
+    header {
+        height: 1300px;
+        display: flex;
+        justify-content: center;
+    }
+    .contenair .content img {
+        margin-top: 644px;
+        left: 0px;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+    }
+    .head img {
+        width: 120px;
+    }
+    .contenair .head button {
+        width: 150px;
+        height: 35px;
+    }
+    .contenair .head button a {
+        font-size: 16px;
+        padding: 0;
+    }
+    .content .text {
+        margin-top: -110px;
+        text-align: center;
+    }
+}
+.grow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 470px;
+}
+.cont {
+    max-width: 1300px;
+    position: absolute;
+    margin-top: 120px;
+    padding: 40px 70px 40px 70px;
+    box-shadow: 0 0 7px #46464659;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-content: stretch;
+    align-items: center;
+    /* background-color: #ffa3ff; */
+}
+@media (max-width: 950px) {
+    .cont {
+        display: inline-block;
+        margin: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+    .grow .cont .text {
+        margin-top: 70px;
+        text-align: center;
+    }
+    .grow {
+        height: 700px;
+    }
+    .flow .cont .text h2 {
+        margin-top: 50px;
+    }
+    .flow {
+        display: inline-block;
+        margin: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+    .flow {
+        height: 635px;
+    }
+}
+.grow .cont img {
+    max-width: 450px;
+    margin-right: -65px;
+}
+.grow .cont .text {
+    max-width: 500px;
+    margin-right: 60px;
+    margin-left: 20px;
+}
+.grow .cont .text h2 {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.grow .cont .text p {
+    font-size: 19px;
+    color: #626262;
+}
+.clear {
+    clear: both;
+}
+.flow {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    min-height: 420px;
+}
+.flow .cont img {
+    max-width: 450px;
+    margin-left: -65px;
+}
+.flow .cont .text {
+    max-width: 500px;
+    margin-left: 90px;
+}
+.flow .cont .text h2 {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.flow .cont .text p {
+    font-size: 19px;
+    color: #626262;
+}
+@media (max-width: 745px) {
+    .flow .cont .text h2 {
+        font-size: 29px;
+    }
+    .flow .cont .text {
+        text-align: center;
+    }
+}
+.two {
+    flex-direction: row;
+}
+.your {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 700px;
+}
+.your .cont img {
+    max-width: 450px;
+    margin-left: -65px;
+}
+.your .cont .text {
+    max-width: 500px;
+    margin-right: 60px;
+    margin-left: 20px;
+}
+.your .cont .text h2 {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.your .cont .text p {
+    font-size: 19px;
+    color: #626262;
+}
+.ready {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.ready .conte {
+    height: 200px;
+    width: 650px;
+    box-shadow: 0 0 6px #00000087;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-bottom: -80px;
+    z-index: 500;
+}
+.ready .conte h3 {
+    position: absolute;
+    font-size: 25px;
+    top: 35px;
+}
+.ready .conte button {
+    position: absolute;
+    bottom: 30px;
+    background-color: #fe52c0;
+    border-radius: 50px;
+    height: 55px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.ready .conte button:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    background-color: #ff73cc;
+}
+.ready .conte button a {
+    font-size: 30px;
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+footer {
+    background-color: #00252e;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+.contenar {
+    width: 90%;
+    background-color: #00252e;
+    height: 500px;
+    padding-top: 120px;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.huddle {
+    width: 500px;
+}
+.huddle div img {
+    width: 20px;
+    height: 100%;
+    margin: 0 20px 0 20px;
+}
+.huddle div {
+    margin: 20px;
+    display: flex;
+    margin: 40px 0 20px 0;
+}
+.p ,
+.p2 ,
+.mass {
+    margin-top: 84px;
+}
+.p p {
+    margin: 0 20px 20px;
+    cursor: pointer;
+}
+.p2 p {
+    margin: 0 20px 20px;
+    cursor: pointer;
+}
+.mass img {
+    width: 30px;
+    padding: 2px;
+    cursor: pointer;
+}
+.copy {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+}
